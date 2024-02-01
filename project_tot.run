@@ -1,0 +1,13 @@
+reset;
+# model file
+model project_tot.mod;
+data project_tot.dat;
+#calling optimization engine
+option solver cplex;
+expand;
+
+solve;
+
+# display results
+
+display x,y,z;
